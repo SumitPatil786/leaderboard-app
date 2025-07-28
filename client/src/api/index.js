@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-    baseURL: "http://localhost:5000/api",  
+    baseURL: "https://leaderboard-app-agol.onrender.com",  
 });
 
 export const fetchUsers = () => api.get("/users").then(r => r.data);
